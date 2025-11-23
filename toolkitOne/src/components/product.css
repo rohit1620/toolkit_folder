@@ -1,0 +1,109 @@
+.product-page {
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+  font-family: Arial;
+}
+
+/* LEFT SIDE */
+.left {
+  width: 40%;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.thumbnail-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 55%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.rating {
+  background: #f0c14b;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.amazon-choice {
+  background: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.bought {
+  color: #007600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.discount {
+  color: #cc0c39;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mrp {
+  margin-top: 4px;
+  color: #555;
+}
+
+.tax {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #111;
+}
+
+.offers {
+  margin-top: 20px;
+}
+
+.offer-box {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 10px;
+  background: #fafafa;
+}
