@@ -1,11 +1,21 @@
-import React from "react";
+// import React, { useState, useEffect } from "react";
 import "./product.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem, clearItem } from "../redux_toolkit/slice";
+import { fetchData } from "../redux_toolkit/productSlice";
+import { useEffect, useState } from "react";
 
 export default function Product() {
   const dispatch = useDispatch();
   const data = useSelector((item) => item.cart.value);
+
+  useEffect(() => {
+    dispatch(fetchData());
+  }, []);
+
+  const selector = useSelector((state) => state.product.items);
+  console.log("data fetch", selector);
+
   return (
     <div className="product-page">
       {/* LEFT IMAGE SECTION */}
