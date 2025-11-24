@@ -1,0 +1,37 @@
+#product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 90%;
+    margin:auto;
+    margin-top: 100px
+}
+
+/* 3) Tablet (Portrait) */
+/* 576px – 768px */
+@media (max-width: 768px) {
+  #product{
+     grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* 2) Small Mobile */
+/* 480px – 576px */
+@media (max-width: 576px) {
+  #product{
+     grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* 1) Extra Small (Mobile) */
+/* 0px – 480px */
+@media (max-width: 480px) {
+ #product{
+     grid-template-columns: repeat(1,1fr);
+      width: 70%;
+      height: 270px;
+  }
+   /* #product>img{
+    height: 50%;
+   } */
+}

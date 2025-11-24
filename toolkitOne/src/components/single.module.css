@@ -1,0 +1,27 @@
+.singleItem{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: rgb(204, 226, 226);
+    text-align: center;
+    border-radius: 20px;
+    height: 320px;
+}
+
+.singleItem>img{
+    width: 100%;
+    border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+}
+
+.singleItem>div>button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 7px ;
+    cursor: pointer;
+}
+.singleItem>div>h4{
+    margin-top: 3px;
+}
+.singleItem>div>p{
+    margin-top: 4px;
+}

@@ -1,0 +1,55 @@
+.mainDiv{
+    width: 60%;
+    margin: auto;
+   
+}
+.secondDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    font-style: italic;
+}
+.secondDiv>h3{
+    color: green;
+}
+.thirdDiv{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 1rem;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.fourDiv>img{
+    width: 100px;
+    height: 80px;
+ 
+}
+.fourDiv{
+    display: flex;
+       gap: 1rem;
+       align-items: center;
+       
+}
+.fourDiv>div>h4{
+    margin-bottom: .4rem;
+}
+.fiveDiv{
+    padding: 1.5rem;
+}
+.fiveDiv>button{
+    background-color: red;
+    color: white;
+    font-style: italic;
+    padding: 3px 6px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fiveDiv>p{
+    color: green;
+}
+.fivebeforDiv{
+    display: flex;
+    height: 30px;
+  
+}

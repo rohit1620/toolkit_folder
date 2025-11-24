@@ -1,24 +1,37 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export default function Header({ cartCount }) {
+  const value = useSelector((state) => state.cart.items);
+  console.log(value.length);
+
   return (
     <header style={styles.header}>
       {/* Logo */}
       <div style={styles.logo}>MyShop</div>
 
       <div style={styles.middle}>
-        <h3>Home</h3>
-        <h3>Product</h3>
+        <Link to="/" style={{ color: "yellow", listStyle: "none" }}>
+          <h3>Home</h3>
+        </Link>
+        <Link to="/product" style={{ color: "yellow", listStyle: "none" }}>
+          <h3>Product</h3>
+        </Link>
       </div>
 
       {/* Right Section */}
       <div style={styles.right}>
         {/* Cart */}
         <div style={styles.cartBox}>
-          <span style={styles.cartIcon}>🛒</span>
+          <Link to="/cart" style={{ color: "yellow", listStyle: "none" }}>
+            <span style={styles.cartIcon}>
+              🛒{value.length > 0 ? value.length : 0}
+            </span>
+          </Link>
 
           {/* Cart Badge */}
-          {cartCount > 0 && <span style={styles.badge}>{cartCount}</span>}
+          {cartCount >= 0 && <span style={styles.badge}>{cartCount}</span>}
         </div>
       </div>
     </header>
@@ -37,6 +50,8 @@ const styles = {
     justifyContent: "space-around",
     alignItems: "center",
     // padding: "0px 90px",
+    position: "fixed",
+    top: "0px",
   },
   middle: {
     display: "flex",
@@ -57,6 +72,9 @@ const styles = {
   },
   cartIcon: {
     fontSize: "28px",
+    // backgroundColor: "yellow",
+    color: "yellow",
+    fontWeight: "bold",
   },
   badge: {
     position: "absolute",
